@@ -1,0 +1,3 @@
+C:/Users/joaqu/CLionProjects/Project-covid19/cmake-build-debug/CMakeFiles/Project_covid19.dir
+C:/Users/joaqu/CLionProjects/Project-covid19/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joaqu/CLionProjects/Project-covid19/cmake-build-debug/CMakeFiles/rebuild_cache.dir
