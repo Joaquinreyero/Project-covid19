@@ -80,22 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.cpp">
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h">
 			<Option target="Project_covid19"/>
 		</Unit>
-		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/casos_edad.cpp">
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/casos_edad.h">
 			<Option target="Project_covid19"/>
 		</Unit>
-		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/estad.cpp">
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/estad.h">
 			<Option target="Project_covid19"/>
 		</Unit>
 		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/main.cpp">
 			<Option target="Project_covid19"/>
 		</Unit>
-		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/muertes.cpp">
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/muertes.h">
 			<Option target="Project_covid19"/>
 		</Unit>
-		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/p_casos.cpp">
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/p_casos.h">
 			<Option target="Project_covid19"/>
 		</Unit>
 		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/CMakeLists.txt">

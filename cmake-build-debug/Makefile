@@ -141,87 +141,6 @@ Project_covid19/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/build
 .PHONY : Project_covid19/fast
 
-casos_cui.obj: casos_cui.cpp.obj
-
-.PHONY : casos_cui.obj
-
-# target to build an object file
-casos_cui.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/casos_cui.cpp.obj
-.PHONY : casos_cui.cpp.obj
-
-casos_cui.i: casos_cui.cpp.i
-
-.PHONY : casos_cui.i
-
-# target to preprocess a source file
-casos_cui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/casos_cui.cpp.i
-.PHONY : casos_cui.cpp.i
-
-casos_cui.s: casos_cui.cpp.s
-
-.PHONY : casos_cui.s
-
-# target to generate assembly for a file
-casos_cui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/casos_cui.cpp.s
-.PHONY : casos_cui.cpp.s
-
-casos_edad.obj: casos_edad.cpp.obj
-
-.PHONY : casos_edad.obj
-
-# target to build an object file
-casos_edad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/casos_edad.cpp.obj
-.PHONY : casos_edad.cpp.obj
-
-casos_edad.i: casos_edad.cpp.i
-
-.PHONY : casos_edad.i
-
-# target to preprocess a source file
-casos_edad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/casos_edad.cpp.i
-.PHONY : casos_edad.cpp.i
-
-casos_edad.s: casos_edad.cpp.s
-
-.PHONY : casos_edad.s
-
-# target to generate assembly for a file
-casos_edad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/casos_edad.cpp.s
-.PHONY : casos_edad.cpp.s
-
-estad.obj: estad.cpp.obj
-
-.PHONY : estad.obj
-
-# target to build an object file
-estad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/estad.cpp.obj
-.PHONY : estad.cpp.obj
-
-estad.i: estad.cpp.i
-
-.PHONY : estad.i
-
-# target to preprocess a source file
-estad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/estad.cpp.i
-.PHONY : estad.cpp.i
-
-estad.s: estad.cpp.s
-
-.PHONY : estad.s
-
-# target to generate assembly for a file
-estad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/estad.cpp.s
-.PHONY : estad.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -249,60 +168,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-muertes.obj: muertes.cpp.obj
-
-.PHONY : muertes.obj
-
-# target to build an object file
-muertes.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/muertes.cpp.obj
-.PHONY : muertes.cpp.obj
-
-muertes.i: muertes.cpp.i
-
-.PHONY : muertes.i
-
-# target to preprocess a source file
-muertes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/muertes.cpp.i
-.PHONY : muertes.cpp.i
-
-muertes.s: muertes.cpp.s
-
-.PHONY : muertes.s
-
-# target to generate assembly for a file
-muertes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/muertes.cpp.s
-.PHONY : muertes.cpp.s
-
-p_casos.obj: p_casos.cpp.obj
-
-.PHONY : p_casos.obj
-
-# target to build an object file
-p_casos.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/p_casos.cpp.obj
-.PHONY : p_casos.cpp.obj
-
-p_casos.i: p_casos.cpp.i
-
-.PHONY : p_casos.i
-
-# target to preprocess a source file
-p_casos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/p_casos.cpp.i
-.PHONY : p_casos.cpp.i
-
-p_casos.s: p_casos.cpp.s
-
-.PHONY : p_casos.s
-
-# target to generate assembly for a file
-p_casos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Project_covid19.dir\build.make CMakeFiles/Project_covid19.dir/p_casos.cpp.s
-.PHONY : p_casos.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -312,24 +177,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Project_covid19
-	@echo ... casos_cui.obj
-	@echo ... casos_cui.i
-	@echo ... casos_cui.s
-	@echo ... casos_edad.obj
-	@echo ... casos_edad.i
-	@echo ... casos_edad.s
-	@echo ... estad.obj
-	@echo ... estad.i
-	@echo ... estad.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... muertes.obj
-	@echo ... muertes.i
-	@echo ... muertes.s
-	@echo ... p_casos.obj
-	@echo ... p_casos.i
-	@echo ... p_casos.s
 .PHONY : help
 
 

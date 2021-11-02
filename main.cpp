@@ -2,11 +2,11 @@
 #include <sstream>
 #include <cstring>
 #include "fstream"
-#include "estad.cpp"
-#include "muertes.cpp"
-#include "p_casos.cpp"
-#include "casos_edad.cpp"
-#include "casos_cui.cpp"
+#include "estad.h"
+#include "muertes.h"
+#include "p_casos.h"
+#include "casos_edad.h"
+#include "casos_cui.h"
 
 using namespace std;
 
@@ -60,6 +60,7 @@ int main(int argc, char **argv) {
     string ruta;
     for (int i = 0; i < argc; ++i) {
 
+
         if (strcmp(argv[i], "-estad") == 0) {
             ruta = argv[i+1];
             fstream file("./"+ruta);
@@ -67,10 +68,11 @@ int main(int argc, char **argv) {
                 cout<<"El archivo: "<<ruta<<" es invalido";
                 break;
             }
-            cout << "funcion estado y archivo:" << argv[i+1];
+            //cout << "funcion estado y archivo:" << argv[i+1];
             estad(argv[i+1]);
             break;
         }
+
 
         if (strcmp(argv[i], "-p_casos") == 0) {
             if (!isNumber(argv[i+1])) {
@@ -100,6 +102,7 @@ int main(int argc, char **argv) {
             }
         }
 
+
         if (strcmp(argv[i], "-p_muertes") == 0) {
             if (!isNumber(argv[i+1])) {
                 ruta = argv[i+1];
@@ -110,7 +113,7 @@ int main(int argc, char **argv) {
                 }
                 else{
                     cout << "funcion p muertes para todas provincias y archivo: " << argv[i + 1];
-                    p_muertes(argv[i+1]);
+                    //p_muertes(argv[i+1]);
                     break;
                 }
             } else {
@@ -123,11 +126,12 @@ int main(int argc, char **argv) {
                 else{
                     cout << "funcion p muertes con p igual a: " << argv[i + 1] << " y archivo: " << argv[i + 2];
                     int fistProv = stoi(argv[i+1]);
-                    p_muertes(argv[i+2],fistProv);
+                    //p_muertes(argv[i+2],fistProv);
                     break;
                 }
             }
         }
+
 
         if (strcmp(argv[i], "-casos-edad") == 0) {
             if(!isNumber(argv[i+1])){
@@ -144,11 +148,12 @@ int main(int argc, char **argv) {
                 else{
                     cout<<"funcion para mostrar casos donde edad sea: "<<argv[i+1]<<" y arhivo: "<<argv[i+2];
                     int edad = stoi(argv[i+1]);
-                    casos_edad(argv[i+2],edad);
+                    //casos_edad(argv[i+2],edad);
                     break;
                 }
             }
         }
+
 
         if (strcmp(argv[i], "-casos-cui") == 0) {
             if (isDate(argv[i + 1])) {
@@ -176,7 +181,7 @@ int main(int argc, char **argv) {
                     break;
                 } else {
                     cout << "funcion casos CUI para todos y archivo: " << argv[i + 1];
-                    casos_cui(argv[i+1]);
+                    //casos_cui(argv[i+1]);
                     break;
                 }
             }

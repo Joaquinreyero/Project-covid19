@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h
+string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
+
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_edad.h
+string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
+
+C:/Users/joaqu/CLionProjects/Project-covid19/estad.h
+string
+-
+iostream
+-
+fstream
+-
+vector
+-
+sstream
+-
+
 C:/Users/joaqu/CLionProjects/Project-covid19/main.cpp
 iostream
 -
@@ -15,4 +35,22 @@ cstring
 -
 fstream
 C:/Users/joaqu/CLionProjects/Project-covid19/fstream
+estad.h
+C:/Users/joaqu/CLionProjects/Project-covid19/estad.h
+muertes.h
+C:/Users/joaqu/CLionProjects/Project-covid19/muertes.h
+p_casos.h
+C:/Users/joaqu/CLionProjects/Project-covid19/p_casos.h
+casos_edad.h
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_edad.h
+casos_cui.h
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h
+
+C:/Users/joaqu/CLionProjects/Project-covid19/muertes.h
+string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
+
+C:/Users/joaqu/CLionProjects/Project-covid19/p_casos.h
+string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
 

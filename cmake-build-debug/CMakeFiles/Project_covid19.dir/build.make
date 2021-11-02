@@ -88,94 +88,19 @@ CMakeFiles/Project_covid19.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_covid19.dir/main.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joaqu\CLionProjects\Project-covid19\main.cpp -o CMakeFiles\Project_covid19.dir\main.cpp.s
 
-CMakeFiles/Project_covid19.dir/estad.cpp.obj: CMakeFiles/Project_covid19.dir/flags.make
-CMakeFiles/Project_covid19.dir/estad.cpp.obj: ../estad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project_covid19.dir/estad.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project_covid19.dir\estad.cpp.obj -c C:\Users\joaqu\CLionProjects\Project-covid19\estad.cpp
-
-CMakeFiles/Project_covid19.dir/estad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_covid19.dir/estad.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joaqu\CLionProjects\Project-covid19\estad.cpp > CMakeFiles\Project_covid19.dir\estad.cpp.i
-
-CMakeFiles/Project_covid19.dir/estad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_covid19.dir/estad.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joaqu\CLionProjects\Project-covid19\estad.cpp -o CMakeFiles\Project_covid19.dir\estad.cpp.s
-
-CMakeFiles/Project_covid19.dir/p_casos.cpp.obj: CMakeFiles/Project_covid19.dir/flags.make
-CMakeFiles/Project_covid19.dir/p_casos.cpp.obj: ../p_casos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project_covid19.dir/p_casos.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project_covid19.dir\p_casos.cpp.obj -c C:\Users\joaqu\CLionProjects\Project-covid19\p_casos.cpp
-
-CMakeFiles/Project_covid19.dir/p_casos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_covid19.dir/p_casos.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joaqu\CLionProjects\Project-covid19\p_casos.cpp > CMakeFiles\Project_covid19.dir\p_casos.cpp.i
-
-CMakeFiles/Project_covid19.dir/p_casos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_covid19.dir/p_casos.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joaqu\CLionProjects\Project-covid19\p_casos.cpp -o CMakeFiles\Project_covid19.dir\p_casos.cpp.s
-
-CMakeFiles/Project_covid19.dir/muertes.cpp.obj: CMakeFiles/Project_covid19.dir/flags.make
-CMakeFiles/Project_covid19.dir/muertes.cpp.obj: ../muertes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project_covid19.dir/muertes.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project_covid19.dir\muertes.cpp.obj -c C:\Users\joaqu\CLionProjects\Project-covid19\muertes.cpp
-
-CMakeFiles/Project_covid19.dir/muertes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_covid19.dir/muertes.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joaqu\CLionProjects\Project-covid19\muertes.cpp > CMakeFiles\Project_covid19.dir\muertes.cpp.i
-
-CMakeFiles/Project_covid19.dir/muertes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_covid19.dir/muertes.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joaqu\CLionProjects\Project-covid19\muertes.cpp -o CMakeFiles\Project_covid19.dir\muertes.cpp.s
-
-CMakeFiles/Project_covid19.dir/casos_edad.cpp.obj: CMakeFiles/Project_covid19.dir/flags.make
-CMakeFiles/Project_covid19.dir/casos_edad.cpp.obj: ../casos_edad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project_covid19.dir/casos_edad.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project_covid19.dir\casos_edad.cpp.obj -c C:\Users\joaqu\CLionProjects\Project-covid19\casos_edad.cpp
-
-CMakeFiles/Project_covid19.dir/casos_edad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_covid19.dir/casos_edad.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joaqu\CLionProjects\Project-covid19\casos_edad.cpp > CMakeFiles\Project_covid19.dir\casos_edad.cpp.i
-
-CMakeFiles/Project_covid19.dir/casos_edad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_covid19.dir/casos_edad.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joaqu\CLionProjects\Project-covid19\casos_edad.cpp -o CMakeFiles\Project_covid19.dir\casos_edad.cpp.s
-
-CMakeFiles/Project_covid19.dir/casos_cui.cpp.obj: CMakeFiles/Project_covid19.dir/flags.make
-CMakeFiles/Project_covid19.dir/casos_cui.cpp.obj: ../casos_cui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project_covid19.dir/casos_cui.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Project_covid19.dir\casos_cui.cpp.obj -c C:\Users\joaqu\CLionProjects\Project-covid19\casos_cui.cpp
-
-CMakeFiles/Project_covid19.dir/casos_cui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_covid19.dir/casos_cui.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\joaqu\CLionProjects\Project-covid19\casos_cui.cpp > CMakeFiles\Project_covid19.dir\casos_cui.cpp.i
-
-CMakeFiles/Project_covid19.dir/casos_cui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_covid19.dir/casos_cui.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\joaqu\CLionProjects\Project-covid19\casos_cui.cpp -o CMakeFiles\Project_covid19.dir\casos_cui.cpp.s
-
 # Object files for target Project_covid19
 Project_covid19_OBJECTS = \
-"CMakeFiles/Project_covid19.dir/main.cpp.obj" \
-"CMakeFiles/Project_covid19.dir/estad.cpp.obj" \
-"CMakeFiles/Project_covid19.dir/p_casos.cpp.obj" \
-"CMakeFiles/Project_covid19.dir/muertes.cpp.obj" \
-"CMakeFiles/Project_covid19.dir/casos_edad.cpp.obj" \
-"CMakeFiles/Project_covid19.dir/casos_cui.cpp.obj"
+"CMakeFiles/Project_covid19.dir/main.cpp.obj"
 
 # External object files for target Project_covid19
 Project_covid19_EXTERNAL_OBJECTS =
 
 Project_covid19.exe: CMakeFiles/Project_covid19.dir/main.cpp.obj
-Project_covid19.exe: CMakeFiles/Project_covid19.dir/estad.cpp.obj
-Project_covid19.exe: CMakeFiles/Project_covid19.dir/p_casos.cpp.obj
-Project_covid19.exe: CMakeFiles/Project_covid19.dir/muertes.cpp.obj
-Project_covid19.exe: CMakeFiles/Project_covid19.dir/casos_edad.cpp.obj
-Project_covid19.exe: CMakeFiles/Project_covid19.dir/casos_cui.cpp.obj
 Project_covid19.exe: CMakeFiles/Project_covid19.dir/build.make
 Project_covid19.exe: CMakeFiles/Project_covid19.dir/linklibs.rsp
 Project_covid19.exe: CMakeFiles/Project_covid19.dir/objects1.rsp
 Project_covid19.exe: CMakeFiles/Project_covid19.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Project_covid19.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\joaqu\CLionProjects\Project-covid19\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Project_covid19.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Project_covid19.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
