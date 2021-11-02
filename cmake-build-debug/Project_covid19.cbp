@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashEntry.h">
+			<Option target="Project_covid19"/>
+		</Unit>
+		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashMap.h">
+			<Option target="Project_covid19"/>
+		</Unit>
 		<Unit filename="C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h">
 			<Option target="Project_covid19"/>
 		</Unit>

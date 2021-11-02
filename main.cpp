@@ -64,10 +64,10 @@ int main(int argc, char **argv) {
         if (strcmp(argv[i], "-estad") == 0) {
             ruta = argv[i+1];
             fstream file("./"+ruta);
-            if (file.fail()){
+            /*if (file.fail()){
                 cout<<"El archivo: "<<ruta<<" es invalido";
                 break;
-            }
+            }*/
             //cout << "funcion estado y archivo:" << argv[i+1];
             estad(argv[i+1]);
             break;

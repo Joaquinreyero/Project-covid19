@@ -6,61 +6,43 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include <unordered_map>
+#include <ctime>
+
 
 using namespace std;
 
-void estad(const string& file){
+void estad(const string& fileName) {
 
     int colsOfInterest[] = {0, 2, 3, 12, 13, 14, 17, 20};
     int nColumns = sizeof(colsOfInterest) / sizeof(colsOfInterest[0]);
 
     fstream fin;
-    fin.open("./" + file, ios::in);
+    fin.open("./" + fileName, ios::in);
 
     vector<string> row;
     string line, word;
     int confirmed = 0;
-    int death = 0;
     int total = -1;
 
+    clock_t begin;
+    begin = clock();
     while (getline(fin, line))
     {
-        int year;
         total++;
         row.clear();
         stringstream s(line);
         while (getline(s, word, ','))
         {
-            if (word.size() > 0)
-            {
-                word = word.substr(1, word.size() - 2);
-            }
-            else
-            {
-                word = "NA";
-            }
             row.push_back(word);
         }
-
-
-        if (row[20].compare("Confirmado") == 0 || total==-1)
+        if (row[20][1] == 'C' || total==-1)
         {
-            if (row[3].compare("Meses") == 0){
-                year = stoi(row[2]);
-                cout<<year;
-            }
-            if (row[14].compare("SI") == 0){
-                death++;
-            }
-            for (int i = 0; i < nColumns; i++)
-            {
-                cout << row[colsOfInterest[i]] << " ";
-            }
             confirmed++;
             cout << endl;
         }
     }
-    cout << endl;
-    cout << "Casos confirmados: " << confirmed << " de " << total << " casos registrados." << endl;
-    cout << "Fallecieron: "<< death;
+    clock_t end = clock();
+    double elapsed_secs = static_cast<double>(end - begin) / CLOCKS_PER_SEC;
+    cout << "Casos confirmados: " << confirmed << " de " << total << " casos registrados y demoro un total de: "<<elapsed_secs;
 }
