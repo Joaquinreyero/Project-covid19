@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void casos_cui(const string& file){
+void casos_cui(const string& fileName) {
 
 }
