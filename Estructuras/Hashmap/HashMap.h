@@ -33,11 +33,9 @@ public:
 
     void put(K clave, T valor);
 
-    void remove(K clave);
 
     ~HashMap();
 
-    bool esVacio();
 
     void print();
 };
@@ -96,27 +94,10 @@ T HashMap<K, T>::get(K clave)
 template <class K, class T>
 void HashMap<K, T>::put(K clave, T valor)
 {
-    unsigned int pos = hashFuncP(clave) % tamanio;
-
-
+    unsigned int pos = hashFuncP(clave);
     tabla[pos] = new HashEntry<K, T>(clave, valor); //Corresponde a una fila en la tabla HASH
 }
 
-template <class K, class T>
-void HashMap<K, T>::remove(K clave) {}
-
-template <class K, class T>
-bool HashMap<K, T>::esVacio()
-{
-    for (int i = 0; i < tamanio; i++)
-    {
-        if (tabla[i] != NULL)
-        {
-            return false;
-        }
-    }
-    return true;
-}
 
 template <class K, class T>
 unsigned int HashMap<K, T>::hashFunc(K clave)
@@ -134,7 +115,6 @@ void HashMap<K, T>::print()
     std::cout << "--------------------" << std::endl;
     for (int i = 0; i < tamanio; i++)
     {
-        std::cout << i << " ";
         if (tabla[i] != NULL)
         {
             std::cout << tabla[i]->getClave() << "\t\t";

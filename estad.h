@@ -12,12 +12,6 @@
 
 using namespace std;
 
-unsigned int HashFString(char clave){
-    /*out<<"clave: "<<clave<<endl
-        <<"hash clave: "<<idx;*/
-    auto idx= (unsigned int) clave;
-    return idx;
-}
 
 void estad(const string& fileName) {
 
@@ -34,18 +28,19 @@ void estad(const string& fileName) {
     int total = -1;
     int month = 0;
 
-    HashMap<char,int> mapC(10,&HashFString);
-    HashMap<char,int> mapD(10,&HashFString);
+    HashMap<int,int> mapC(10);
+    HashMap<int,int> mapD(10);
 
-    for (int i = 0; i < 10; ++i) {
-        mapC.put(i+'0',0);
+    for (unsigned int i = 0; i < 10; ++i) {
+        mapC.put(i,0);
     }
-    for (int i = 0; i < 10; ++i) {
-        mapD.put(i+'0',0);
+    for (unsigned int i = 0; i < 10; ++i) {
+        mapD.put(i,0);
     }
 
     clock_t begin;
     begin = clock();
+
 
     while (getline(fin, line)) {
         total++;
@@ -64,33 +59,31 @@ void estad(const string& fileName) {
             row.push_back(word);
         }
         if (row[20][0] == 'C' && total != -1) {
-            if (row[2][0]=='N' or row[14]=="NA" or row[3][0]=='N')
+            if (row[2][0]=='N' or row[14]=="NA" or row[3][0]=='N' or row[2][0]=='-')
                 continue;
             else{
+                int clave = row[2][0]-'0';
                 confirmed++;
                 if (row[14][0] == 'S'){
                     death++;
                     if (row[3][0] == 'A'){
                         if (row[2].length() > 1)
-                            mapD.put(row[2][0],mapD.get(row[2][0])+1);
+                            mapD.put(clave,mapD.get(clave)+1);
                         else
-                            mapD.put('0',mapD.get('0')+1);
+                            mapD.put(0,mapD.get(0)+1);
                     }
                     else
-                        mapD.put('0',mapD.get('0')+1);
+                        mapD.put(0,mapD.get(0)+1);
                 }
-                else{
-                    if (row[3][0] == 'A'){
-                        if (row[2].length() > 1)
-                            mapC.put(row[2][0],mapC.get(row[2][0])+1);
-                        else {
-                            mapC.put('0',mapC.get('0')+1);
-                        }
-
-                    }
+                if (row[3][0] == 'A'){
+                    if (row[2].length() > 1)
+                        mapC.put(clave,mapC.get(clave)+1);
                     else {
-                        mapC.put('0',mapC.get('0')+1);
+                        mapC.put(0,mapC.get(0)+1);
                     }
+                }
+                else {
+                    mapC.put(0,mapC.get(0)+1);
                 }
             }
         }
@@ -104,11 +97,11 @@ void estad(const string& fileName) {
     <<(death*100)/confirmed<<"% fallecieron."<<endl<<endl;
 
     for (int i = 0; i < 10; ++i) {
-        cout<<"Casos en rango "<<i<<" : "<<mapC.get(i+'0')<<endl;
+        cout<<"Casos en rango "<<i<<" : "<<mapC.get(i+0)<<endl;
     }
     cout<<endl;
     for (int i = 0; i < 10; ++i) {
-        cout<<"muertes en rango "<<i<<" : "<<mapD.get(i+'0')<<endl;
+        cout<<"muertes en rango "<<i<<" : "<<mapD.get(i+0)<<endl;
     }
 
     cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
