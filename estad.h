@@ -14,9 +14,6 @@ using namespace std;
 
 void estad(const string& fileName) {
 
-    int colsOfInterest[] = {0, 2, 3, 12, 13, 14, 17, 20};
-    int nColumns = sizeof(colsOfInterest) / sizeof(colsOfInterest[0]);
-
     fstream fin;
     fin.open("./" + fileName, ios::in);
 
@@ -25,7 +22,6 @@ void estad(const string& fileName) {
     int confirmed = 0;
     int death = 0;
     int total = -1;
-    int month = 0;
 
     HashMap<int,int> mapC(10);
     HashMap<int,int> mapD(10);
@@ -57,8 +53,10 @@ void estad(const string& fileName) {
             row.push_back(word);
         }
         if (row[20][0] == 'C' && total != -1) {
-            if (row[2][0]=='N' or row[14]=="NA" or row[3][0]=='N' or row[2][0]=='-')
+            if (row[2][0]=='N' or row[14]=="NA" or row[3][0]=='N' or row[2][0]=='-'){
+                total--;
                 continue;
+            }
             else{
                 int clave = row[2][0]-'0';
                 confirmed++;

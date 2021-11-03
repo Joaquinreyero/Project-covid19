@@ -1,7 +1,6 @@
 #include <iostream>
 #include <sstream>
 #include <cstring>
-#include "fstream"
 #include "estad.h"
 #include "muertes.h"
 #include "p_casos.h"
@@ -64,7 +63,7 @@ int main(int argc, char **argv) {
         if (strcmp(argv[i], "-estad") == 0) {
             ruta = argv[i+1];
             fstream file("./"+ruta);
-            if (file.fail()){
+            if (!file.fail()){      //OJO, FALLA CON ARCHIVO COVID POR TAMANIO
                 cout<<"El archivo: "<<ruta<<" es invalido";
                 break;
             }
@@ -82,7 +81,6 @@ int main(int argc, char **argv) {
                     break;
                 }
                 else {
-                    cout << "funcion p casos para todos y archivo: " << argv[i + 1];
                     p_casos(argv[i+1]);
                     break;
                 }
