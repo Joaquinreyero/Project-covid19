@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashEntry.h
+
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashMap.h
+HashEntry.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashEntry.h
+iostream
+-
+
 C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h
 string
 C:/Users/joaqu/CLionProjects/Project-covid19/string
@@ -29,6 +37,8 @@ unordered_map
 -
 ctime
 -
+Estructuras/Hashmap/HashMap.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashMap.h
 
 C:/Users/joaqu/CLionProjects/Project-covid19/main.cpp
 iostream
