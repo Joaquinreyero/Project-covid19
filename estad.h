@@ -12,7 +12,6 @@
 
 using namespace std;
 
-
 void estad(const string& fileName) {
 
     int colsOfInterest[] = {0, 2, 3, 12, 13, 14, 17, 20};
@@ -40,7 +39,6 @@ void estad(const string& fileName) {
 
     clock_t begin;
     begin = clock();
-
 
     while (getline(fin, line)) {
         total++;
@@ -95,13 +93,15 @@ void estad(const string& fileName) {
     cout<<endl<<"Se registraron "<<total<<" casos de los cuales fueron confirmados "<<confirmed<<" ,falleciendo "
     <<death<<" de ellos."<<endl<<"Estadisticamente, un "<< (confirmed*100)/total<<"% fueron confirmados, de los cuales un "
     <<(death*100)/confirmed<<"% fallecieron."<<endl<<endl;
-
+    int j=0;
     for (int i = 0; i < 10; ++i) {
-        cout<<"Casos en rango "<<i<<" : "<<mapC.get(i+0)<<endl;
+        cout<<"Confirmados en rango de "<<i+(9*j)<<" a "<<(i+(9*j))+9<<" :"<<mapC.get(i+0)<<endl;
+        j++;
     }
-    cout<<endl;
+    cout<<endl;j=0;
     for (int i = 0; i < 10; ++i) {
-        cout<<"muertes en rango "<<i<<" : "<<mapD.get(i+0)<<endl;
+        cout<<"muertes en rango de "<<i+(9*j)<<" a "<<(i+(9*j))+9<<" :"<<mapD.get(i+0)<<endl;
+        j++;
     }
 
     cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
