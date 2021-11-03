@@ -7,8 +7,10 @@
 
 #endif //PROJECT_COVID19_HASHMAP_H
 
-#include <ma>
+#include "HashEntry.h"
+#include <iostream>
 
+using namespace std;
 template <class K, class T>
 class HashMap
 {
@@ -92,13 +94,9 @@ T HashMap<K, T>::get(K clave)
 template <class K, class T>
 void HashMap<K, T>::put(K clave, T valor)
 {
-    unsigned int pos = clave;
 
-    if (tabla[pos] != NULL)
-    {
-        //Manejar la Colision!!!!!!!
-        throw 409;
-    }
+    unsigned int pos = hashFuncP(clave) % tamanio;
+
 
     tabla[pos] = new HashEntry<K, T>(clave, valor); //Corresponde a una fila en la tabla HASH
 }
@@ -128,9 +126,7 @@ unsigned int HashMap<K, T>::hashFunc(K clave)
 template <class K, class T>
 void HashMap<K, T>::print()
 {
-
-    std::cout << "i"
-              << " "
+    std::cout
               << "Clave"
               << "\t\t"
               << "Valor" << std::endl;
@@ -145,4 +141,4 @@ void HashMap<K, T>::print()
         }
         std::cout << std::endl;
     }
-}
+    }
