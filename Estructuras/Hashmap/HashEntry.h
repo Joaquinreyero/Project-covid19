@@ -7,10 +7,12 @@ class HashEntry
 private:
     K clave;
     T valor;
+    unsigned int colisiones;
 public:
     HashEntry(K c, T v){
         clave = c;
         valor = v;
+        colisiones=0;
     }
 
     K getClave(){
@@ -19,7 +21,12 @@ public:
     void setClave(K c){
         clave = c;
     }
-
+    unsigned  int getColisiones(){
+        return colisiones;
+    }
+    void setColisiones(unsigned int x){
+        colisiones=x;
+    }
     T getValor(){
         return valor;
     }

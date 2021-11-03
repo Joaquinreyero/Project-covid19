@@ -29,6 +29,8 @@ public:
 
     T get(K clave);
 
+    unsigned int getColisiones(K clave);
+
     void put(K clave, T valor);
 
     void remove(K clave);
@@ -94,7 +96,6 @@ T HashMap<K, T>::get(K clave)
 template <class K, class T>
 void HashMap<K, T>::put(K clave, T valor)
 {
-
     unsigned int pos = hashFuncP(clave) % tamanio;
 
 
@@ -142,3 +143,17 @@ void HashMap<K, T>::print()
         std::cout << std::endl;
     }
     }
+
+template<class K, class T>
+unsigned int HashMap<K, T>::getColisiones(K clave) {
+    unsigned int pos = hashFuncP(clave) % tamanio;
+    if (tabla[pos] == NULL)
+    {
+        throw 404;
+    }
+    if(tabla[pos]->getClave() == clave){
+        return tabla[pos]->getColisiones();
+    }else{
+        throw 409;
+    }
+}

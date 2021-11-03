@@ -13,6 +13,8 @@
 using namespace std;
 
 unsigned int HashFString(char clave){
+    /*out<<"clave: "<<clave<<endl
+        <<"hash clave: "<<idx;*/
     auto idx= (unsigned int) clave;
     return idx;
 }
@@ -82,7 +84,6 @@ void estad(const string& fileName) {
                         if (row[2].length() > 1)
                             mapC.put(row[2][0],mapC.get(row[2][0])+1);
                         else {
-                            cout<<"La edad: "<<row[0]<<" tiene: "<<row[2].length()<<endl;
                             mapC.put('0',mapC.get('0')+1);
                         }
 
@@ -97,9 +98,10 @@ void estad(const string& fileName) {
 
     clock_t end = clock();
     double elapsed_secs = static_cast<double>(end - begin) / CLOCKS_PER_SEC;
-    cout << "Casos confirmados: " << confirmed << " de " << total << " casos registrados. "<<endl;
-    cout<< "Fallecidos: "<< death << endl;
-    cout<< "La ejecucion tomo: "<< elapsed_secs<<endl;
+
+    cout<<endl<<"Se registraron "<<total<<" casos de los cuales fueron confirmados "<<confirmed<<" ,falleciendo "
+    <<death<<" de ellos."<<endl<<"Estadisticamente, un "<< (confirmed*100)/total<<"% fueron confirmados, de los cuales un "
+    <<(death*100)/confirmed<<"% fallecieron."<<endl<<endl;
 
     for (int i = 0; i < 10; ++i) {
         cout<<"Casos en rango "<<i<<" : "<<mapC.get(i+'0')<<endl;
@@ -108,4 +110,6 @@ void estad(const string& fileName) {
     for (int i = 0; i < 10; ++i) {
         cout<<"muertes en rango "<<i<<" : "<<mapD.get(i+'0')<<endl;
     }
+
+    cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
 }
