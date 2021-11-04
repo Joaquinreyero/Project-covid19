@@ -9,6 +9,8 @@ using namespace std;
 
 void p_casos(const string& fileName){
 
+    cout<<endl<<"Casos por provincias: "<<endl<<endl;
+
     vector<pair<int,int>> order(100);
     pair<int,int> data;
 
@@ -70,7 +72,8 @@ void p_casos(const string& fileName){
 
     for (int i = 0; i < 100; ++i) {
         if (order[i].first != 0)
-            cout<<"La provincia: "<<order[i].second<<" . Casos: "<<order[i].first<<endl;
+            cout<<"-La provincia "<<order[i].second<<", tiene "<<order[i].first
+                <<" casos."<<endl;
     }
     cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
 }
@@ -79,6 +82,9 @@ void p_casos(const string& fileName){
 
 
 void p_casos(const string& fileName, int firstProv){
+
+    cout<<endl<<"Las primeras "<<firstProv
+        <<" provincias con mas casos: "<<endl<<endl;
 
     vector<pair<int,int>> order(100);
     pair<int,int> data;
@@ -127,6 +133,12 @@ void p_casos(const string& fileName, int firstProv){
             }
         }
     }
+
+    if (firstProv > total){
+        cout<<"El numero ingresado es invalido"<<endl;
+        return;
+    }
+
     for (int i = 0; i < 100; ++i) {
         if (mapC.get(i) != 0) {
             data.second=i;
@@ -136,8 +148,13 @@ void p_casos(const string& fileName, int firstProv){
     }
     quicksort(order);
 
+    clock_t end = clock();
+    double elapsed_secs = static_cast<double>(end - begin) / CLOCKS_PER_SEC;
+
     for (int i = 0; i < firstProv; ++i) {
         if (order[i].first != 0)
-            cout<<"La provincia: "<<order[i].second<<" . Casos: "<<order[i].first<<endl;
+            cout<<"-La provincia "<<order[i].second<<", tiene "<<order[i].first
+                <<" casos."<<endl;
     }
+    cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
 }

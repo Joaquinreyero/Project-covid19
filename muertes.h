@@ -28,6 +28,8 @@ void quicksort ( vector< pair<int,int> >& v ) {
 
 void muertes(const string& fileName){
 
+    cout<<endl<<"Muertes por provincias: "<<endl<<endl;
+
     vector<pair<int,int>> order(100);
     pair<int,int> data;
 
@@ -36,8 +38,8 @@ void muertes(const string& fileName){
 
     vector<string> row;
     string line, word;
-    int confirmed = 0;
-    int total = -1;
+    unsigned int confirmed = 0;
+    unsigned int total = -1;
 
     HashMap<int, int> mapC(100);
 
@@ -90,8 +92,10 @@ void muertes(const string& fileName){
 
     for (int i = 0; i < 100; ++i) {
         if (order[i].first != 0)
-            cout<<"La provincia: "<<order[i].second<<" . Muertes: "<<order[i].first<<endl;
+            cout<<"-La provincia "<<order[i].second<<", tiene "<<order[i].first
+                <<" muertes."<<endl;
     }
+
     cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
 
 }
@@ -99,7 +103,10 @@ void muertes(const string& fileName){
 
 
 
-void muertes(const string& fileName, int firstProv){
+void muertes(const string& fileName, unsigned int firstProv){
+
+    cout<<endl<<"Las primeras "<<firstProv
+        <<" provincias con mas muertes: "<<endl<<endl;
 
     vector<pair<int,int>> order(100);
     pair<int,int> data;
@@ -109,8 +116,9 @@ void muertes(const string& fileName, int firstProv){
 
     vector<string> row;
     string line, word;
-    int confirmed = 0;
-    int total = -1;
+    unsigned int confirmed = 0;
+    unsigned int total = -1;
+    unsigned int death= 0;
 
     HashMap<int, int> mapC(100);
 
@@ -143,12 +151,19 @@ void muertes(const string& fileName, int firstProv){
             }
             else{
                 if (row[14][0] == 'S'){
+                    death++;
                     int id = stoi(row[17]);
                     mapC.put(id,mapC.get(id)+1);
                 }
             }
         }
     }
+
+    if (firstProv > total){
+     cout<<"El numero ingresado es invalido"<<endl;
+        return;
+    }
+
     for (int i = 0; i < 100; ++i) {
         if (mapC.get(i) != 0) {
             data.second=i;
@@ -157,8 +172,16 @@ void muertes(const string& fileName, int firstProv){
         }
     }
     quicksort(order);
+
+    clock_t end = clock();
+    double elapsed_secs = static_cast<double>(end - begin) / CLOCKS_PER_SEC;
+
     for (int i = 0; i < firstProv; ++i) {
         if (order[i].first != 0)
-            cout<<"La provincia: "<<order[i].second<<"  Muertes: "<<order[i].first<<endl;
+            cout<<"-La provincia "<<order[i].second<<", tiene "<<order[i].first
+                <<" muertes."<<endl;
     }
+
+    cout<<endl<<"La ejecucion tomo: "<< elapsed_secs<<endl;
+
 }

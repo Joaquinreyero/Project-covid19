@@ -102,6 +102,7 @@ int main(int argc, char **argv) {
                     break;
                 }
                 muertes(argv[i+1]);
+                break;
             }
             if (!Fexists(argv[i+2])){
                 cout<<"Fichero invalido";
