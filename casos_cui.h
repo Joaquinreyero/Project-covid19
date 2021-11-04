@@ -41,7 +41,7 @@ void casos_cui(string fileName,string fecha)
             { row[2]="0";
 
             }
-        if(total>0 && row[13]>=fecha){//toma solo los datos de la edad necesario y los guarda en una clase
+        if(total>0 && row[13]>=fecha && !row[12].compare("SI")){//toma solo los datos de la edad necesario y los guarda en una clase
             a.setid(row[0]);
             a.setage(row[2]);
             a.setCI(row[12]);

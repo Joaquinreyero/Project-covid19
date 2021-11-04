@@ -9,6 +9,14 @@
 
 using namespace std;
 
+bool Fexists(char* fname) {
+    ifstream f;
+    f.open(fname);
+    bool f_exists = f.is_open();
+    f.close();
+    return f_exists;
+}
+
 bool isNumber(const string& x){
     for (char const &y : x) {
         if (isdigit(y) == 0)
@@ -60,16 +68,27 @@ int main(int argc, char **argv) {
 
 
         if (strcmp(argv[i], "-estad") == 0) {
+            if (!Fexists(argv[i+1])){
+              cout<<"Fichero invalido";
+                break;
+            }
             estad(argv[i+1]);
-            break;
         }
 
 
         if (strcmp(argv[i], "-p_casos") == 0) {
+
             if (!isNumber(argv[i+1])) {
-                p_casos(argv[i+1]);
+                if (!Fexists(argv[i+1])){
+                    cout<<"Fichero invalido";
                     break;
+                }
+                p_casos(argv[i+1]);
             } else {
+                if (!Fexists(argv[i+2])){
+                    cout<<"Fichero invalido";
+                    break;
+                }
                 int firstProv = stoi(argv[i+1]);
                 p_casos(argv[i+2],firstProv);
                 }
@@ -78,13 +97,18 @@ int main(int argc, char **argv) {
 
         if (strcmp(argv[i], "-p_muertes") == 0) {
             if (!isNumber(argv[i+1])) {
+                if (!Fexists(argv[i+1])){
+                    cout<<"Fichero invalido";
+                    break;
+                }
                 muertes(argv[i+1]);
-                break;
-            } else {
-                int fistProv = stoi(argv[i+1]);
-                muertes(argv[i+2],fistProv);
+            }
+            if (!Fexists(argv[i+2])){
+                cout<<"Fichero invalido";
                 break;
             }
+            int fistProv = stoi(argv[i+1]);
+            muertes(argv[i+2],fistProv);
         }
 
 
@@ -93,23 +117,35 @@ int main(int argc, char **argv) {
                 cout<<"error, dato invalido!";
                 break;
             }
-            else {
-                casos_edad(argv[i+2],argv[i+1]);
+            if (!Fexists(argv[i+2])){
+                cout<<"Fichero invalido";
                 break;
             }
+            casos_edad(argv[i+2],argv[i+1]);
+            break;
         }
 
 
         if (strcmp(argv[i], "-casos_cui") == 0) {
             if (isDate(argv[i + 1])) {
-                    casos_cui(argv[i + 2],argv[i+1]);
+                if (!Fexists(argv[i+2])){
+                    cout<<"Fichero invalido";
                     break;
-            }
-            else {
-                casos_cui(argv[i+1],"0");
+                }
+                if (!isValidDate(argv[i+1])){
+                    cout<<"Fecha invalida";
+                    break;
+                }
+                casos_cui(argv[i + 2],argv[i+1]);
                 break;
             }
+            if (!Fexists(argv[i+1])){
+                cout<<"Fichero invalido";
+                break;
+            }
+            casos_cui(argv[i+1],"0");
         }
     }
+
     return 0;
 }
