@@ -130,7 +130,7 @@ int main(int argc, char **argv) {
         }
 
 
-        if (strcmp(argv[i], "-casos-edad") == 0) {
+        if (strcmp(argv[i], "-casos_edad") == 0) {
             if(!isNumber(argv[i+1])){
                 cout<<"error, dato invalido!";
                 break;
@@ -138,21 +138,21 @@ int main(int argc, char **argv) {
             else {
                 ruta = argv[i+2];
                 fstream file("./"+ruta);
-                if (file.fail()){
+                if (!file.fail()){
                     cout<<"El archivo: "<<ruta<<" es invalido";
                     break;
                 }
                 else{
                     cout<<"funcion para mostrar casos donde edad sea: "<<argv[i+1]<<" y arhivo: "<<argv[i+2];
-                    int edad = stoi(argv[i+1]);
-                    //casos_edad(argv[i+2],edad);
+                    //int edad = stoi(argv[i+1]);
+                    casos_edad(argv[i+2],argv[i+1]);
                     break;
                 }
             }
         }
 
 
-        if (strcmp(argv[i], "-casos-cui") == 0) {
+        if (strcmp(argv[i], "-casos_cui") == 0) {
             if (isDate(argv[i + 1])) {
                 if (!isValidDate(argv[i + 1])) {
                     cout << "error, fecha invalida!";
@@ -161,11 +161,12 @@ int main(int argc, char **argv) {
                 else {
                     ruta = argv[i + 2];
                     fstream file("./" + ruta);
-                    if (file.fail()) {
+                    if (!file.fail()) {
                         cout << "El archivo : " << ruta << " es invalido";
                         break;
                     } else {
                         cout <<"funcion casos CUI apartir de fecha: "<<argv[i+1]<<" y archivo: "<<argv[i + 2];
+                        casos_cui(argv[i + 2],argv[i+1]);
                         break;
                     }
                 }
