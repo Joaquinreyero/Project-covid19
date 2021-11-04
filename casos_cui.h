@@ -4,8 +4,10 @@
 
 #include "string"
 
+
 void casos_cui(string fileName,string fecha)
-{   Patient a;
+{
+    Patient a;
     if(fecha.empty()){fecha="202";}
     int colsOfInterest[] = {0, 2, 3, 12, 13, 14, 17, 20};
     int nColumns = sizeof(colsOfInterest) / sizeof(colsOfInterest[0]);

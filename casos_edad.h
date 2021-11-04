@@ -24,6 +24,8 @@ void casos_edad(string fileName,string age)
 
         row.clear();
         stringstream s(line);
+
+
         while (getline(s, word, ','))
         {
             if (word.size() > 0)

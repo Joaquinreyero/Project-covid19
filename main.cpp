@@ -128,6 +128,10 @@ int main(int argc, char **argv) {
 
 
         if (strcmp(argv[i], "-casos_cui") == 0) {
+            if(isNumber(argv[i+1])){
+                cout<<"Dato invalido";
+                break;
+            }
             if (isDate(argv[i + 1])) {
                 if (!Fexists(argv[i+2])){
                     cout<<"Fichero invalido";

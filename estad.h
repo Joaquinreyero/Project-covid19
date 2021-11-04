@@ -91,6 +91,7 @@ void estad(const string& fileName) {
     cout<<endl<<"Se registraron "<<total<<" casos de los cuales fueron confirmados "<<confirmed<<" ,falleciendo "
     <<death<<" de ellos."<<endl<<"Estadisticamente, un "<< (confirmed*100)/total<<"% fueron confirmados, de los cuales un "
     <<(death*100)/confirmed<<"% fallecieron."<<endl<<endl;
+
     int j=0;
     for (int i = 0; i < 10; ++i) {
         cout<<"Confirmados en rango de "<<i+(9*j)<<" a "<<(i+(9*j))+9<<" :"<<mapC.get(i+0)<<endl;
