@@ -56,17 +56,10 @@ bool isValidDate(const string& x){
 }
 
 int main(int argc, char **argv) {
-    string ruta;
     for (int i = 0; i < argc; ++i) {
 
 
         if (strcmp(argv[i], "-estad") == 0) {
-            ruta = argv[i+1];
-            fstream file("./"+ruta);
-            if (file.fail()){      //OJO, FALLA CON ARCHIVO COVID POR TAMANIO
-                cout<<"El archivo: "<<ruta<<" es invalido";
-                break;
-            }
             estad(argv[i+1]);
             break;
         }
@@ -74,55 +67,23 @@ int main(int argc, char **argv) {
 
         if (strcmp(argv[i], "-p_casos") == 0) {
             if (!isNumber(argv[i+1])) {
-                ruta = argv[i+1];
-                fstream file("./"+ruta);
-                if (file.fail()){
-                    cout<<"El archivo: "<<ruta<<" es invalido";
+                p_casos(argv[i+1]);
                     break;
-                }
-                else {
-                    p_casos(argv[i+1]);
-                    break;
-                }
             } else {
-                ruta = argv[i+2];
-                fstream file("./"+ruta);
-                if (file.fail()){
-                    cout<<"El archivo: "<<ruta<<" es invalido";
-                    break;
-                }else {
-                    int firstProv = stoi(argv[i+1]);
-                    p_casos(argv[i+2],firstProv);
-                    break;
+                int firstProv = stoi(argv[i+1]);
+                p_casos(argv[i+2],firstProv);
                 }
             }
-        }
 
 
         if (strcmp(argv[i], "-p_muertes") == 0) {
             if (!isNumber(argv[i+1])) {
-                ruta = argv[i+1];
-                fstream file("./"+ruta);
-                if (file.fail()){
-                    cout<<"El archivo: "<<ruta<<" es invalido";
-                    break;
-                }
-                else{
-                    muertes(argv[i+1]);
-                    break;
-                }
+                muertes(argv[i+1]);
+                break;
             } else {
-                ruta = argv[i+2];
-                fstream file("./"+ruta);
-                if (file.fail()){
-                    cout<<"El archivo: "<<ruta<<" es invalido";
-                    break;
-                }
-                else{
-                    int fistProv = stoi(argv[i+1]);
-                    muertes(argv[i+2],fistProv);
-                    break;
-                }
+                int fistProv = stoi(argv[i+1]);
+                muertes(argv[i+2],fistProv);
+                break;
             }
         }
 
@@ -133,52 +94,20 @@ int main(int argc, char **argv) {
                 break;
             }
             else {
-                ruta = argv[i+2];
-                fstream file("./"+ruta);
-                if (!file.fail()){
-                    cout<<"El archivo: "<<ruta<<" es invalido";
-                    break;
-                }
-                else{
-                    cout<<"funcion para mostrar casos donde edad sea: "<<argv[i+1]<<" y arhivo: "<<argv[i+2];
-                    //int edad = stoi(argv[i+1]);
-                    casos_edad(argv[i+2],argv[i+1]);
-                    break;
-                }
+                casos_edad(argv[i+2],argv[i+1]);
+                break;
             }
         }
 
 
         if (strcmp(argv[i], "-casos_cui") == 0) {
             if (isDate(argv[i + 1])) {
-                if (!isValidDate(argv[i + 1])) {
-                    cout << "error, fecha invalida!";
+                    casos_cui(argv[i + 2],argv[i+1]);
                     break;
-                }
-                else {
-                    ruta = argv[i + 2];
-                    fstream file("./" + ruta);
-                    if (!file.fail()) {
-                        cout << "El archivo : " << ruta << " es invalido";
-                        break;
-                    } else {
-                        cout <<"funcion casos CUI apartir de fecha: "<<argv[i+1]<<" y archivo: "<<argv[i + 2];
-                        casos_cui(argv[i + 2],argv[i+1]);
-                        break;
-                    }
-                }
             }
             else {
-                ruta = argv[i + 1];
-                fstream file("./" + ruta);
-                if (file.fail()) {
-                    cout << "El archivo o fecha: " << ruta << " es invalido";
-                    break;
-                } else {
-                    cout << "funcion casos CUI para todos y archivo: " << argv[i + 1];
-                    //casos_cui(argv[i+1]);
-                    break;
-                }
+                casos_cui(argv[i+1],"0");
+                break;
             }
         }
     }
