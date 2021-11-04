@@ -2,7 +2,6 @@
 // Created by joaqu on 1/11/2021.
 //
 #include "string"
-#include "Estructuras/Tree/ArbolBinarioAVL.h"
 
 using namespace std;
 
@@ -21,7 +20,6 @@ void p_casos(const string& fileName){
     int total = -1;
 
     HashMap<int, int> mapC(100);
-    ArbolBinarioAVL<int> Arbolordenamiento;
 
     for (unsigned int i = 0; i < 100; ++i) {
         mapC.put(i, 0);
@@ -34,7 +32,6 @@ void p_casos(const string& fileName){
         total++;
         row.clear();
         stringstream s(line);
-
         while (getline(s, word, ',')) {
             if (!word.empty())
             {
@@ -65,12 +62,10 @@ void p_casos(const string& fileName){
             data data;
             data.id = i;
             data.col = mapC.get(i);
-            Arbolordenamiento.put(i);
         }
     }
-    Arbolordenamiento.inorder();
-}
 
+}
 
 
 

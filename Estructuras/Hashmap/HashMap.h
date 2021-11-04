@@ -137,3 +137,5 @@ unsigned int HashMap<K, T>::getColisiones(K clave) {
         throw 409;
     }
 }
+
+
