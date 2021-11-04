@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-D:/programacion 3/Project-covid19/Estructuras/Cola/Cola.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Cola/Cola.h
 nodo.h
-D:/programacion 3/Project-covid19/Estructuras/Cola/nodo.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Cola/nodo.h
 
-D:/programacion 3/Project-covid19/Estructuras/Cola/nodo.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Cola/nodo.h
 
-D:/programacion 3/Project-covid19/Estructuras/Hashmap/HashEntry.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashEntry.h
 
-D:/programacion 3/Project-covid19/Estructuras/Hashmap/HashMap.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashMap.h
 HashEntry.h
-D:/programacion 3/Project-covid19/Estructuras/Hashmap/HashEntry.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashEntry.h
 iostream
 -
 
-D:/programacion 3/Project-covid19/Patient.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Patient.h
 string.h
-D:/programacion 3/Project-covid19/string.h
+C:/Users/joaqu/CLionProjects/Project-covid19/string.h
 
-D:/programacion 3/Project-covid19/casos_cui.h
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h
 string
-D:/programacion 3/Project-covid19/string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
 
-D:/programacion 3/Project-covid19/casos_edad.h
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_edad.h
 ./Estructuras/Cola/Cola.h
-D:/programacion 3/Project-covid19/Estructuras/Cola/Cola.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Cola/Cola.h
 Patient.h
-D:/programacion 3/Project-covid19/Patient.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Patient.h
 
-D:/programacion 3/Project-covid19/estad.h
+C:/Users/joaqu/CLionProjects/Project-covid19/estad.h
 string
 -
 iostream
@@ -50,9 +50,9 @@ unordered_map
 ctime
 -
 Estructuras/Hashmap/HashMap.h
-D:/programacion 3/Project-covid19/Estructuras/Hashmap/HashMap.h
+C:/Users/joaqu/CLionProjects/Project-covid19/Estructuras/Hashmap/HashMap.h
 
-D:/programacion 3/Project-covid19/main.cpp
+C:/Users/joaqu/CLionProjects/Project-covid19/main.cpp
 iostream
 -
 sstream
@@ -60,21 +60,21 @@ sstream
 cstring
 -
 estad.h
-D:/programacion 3/Project-covid19/estad.h
+C:/Users/joaqu/CLionProjects/Project-covid19/estad.h
 muertes.h
-D:/programacion 3/Project-covid19/muertes.h
+C:/Users/joaqu/CLionProjects/Project-covid19/muertes.h
 p_casos.h
-D:/programacion 3/Project-covid19/p_casos.h
+C:/Users/joaqu/CLionProjects/Project-covid19/p_casos.h
 casos_edad.h
-D:/programacion 3/Project-covid19/casos_edad.h
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_edad.h
 casos_cui.h
-D:/programacion 3/Project-covid19/casos_cui.h
+C:/Users/joaqu/CLionProjects/Project-covid19/casos_cui.h
 
-D:/programacion 3/Project-covid19/muertes.h
+C:/Users/joaqu/CLionProjects/Project-covid19/muertes.h
 string
-D:/programacion 3/Project-covid19/string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
 
-D:/programacion 3/Project-covid19/p_casos.h
+C:/Users/joaqu/CLionProjects/Project-covid19/p_casos.h
 string
-D:/programacion 3/Project-covid19/string
+C:/Users/joaqu/CLionProjects/Project-covid19/string
 

@@ -56,8 +56,6 @@ void casos_edad(string fileName,string age)
 
     };
 
-
-
     for (int i = 0; i < 100; ++i) {
         while (!Order[i].esVacia()){
             Order[i].desencolar().Print();

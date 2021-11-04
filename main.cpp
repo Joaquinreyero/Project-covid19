@@ -63,7 +63,7 @@ int main(int argc, char **argv) {
         if (strcmp(argv[i], "-estad") == 0) {
             ruta = argv[i+1];
             fstream file("./"+ruta);
-            if (!file.fail()){      //OJO, FALLA CON ARCHIVO COVID POR TAMANIO
+            if (file.fail()){      //OJO, FALLA CON ARCHIVO COVID POR TAMANIO
                 cout<<"El archivo: "<<ruta<<" es invalido";
                 break;
             }
@@ -91,7 +91,6 @@ int main(int argc, char **argv) {
                     cout<<"El archivo: "<<ruta<<" es invalido";
                     break;
                 }else {
-                    cout << "funcion p casos con p igual a: " << argv[i + 1] << " y archivo: " << argv[i + 2];
                     int firstProv = stoi(argv[i+1]);
                     p_casos(argv[i+2],firstProv);
                     break;
@@ -109,8 +108,7 @@ int main(int argc, char **argv) {
                     break;
                 }
                 else{
-                    cout << "funcion p muertes para todas provincias y archivo: " << argv[i + 1];
-                    //p_muertes(argv[i+1]);
+                    muertes(argv[i+1]);
                     break;
                 }
             } else {
@@ -121,9 +119,8 @@ int main(int argc, char **argv) {
                     break;
                 }
                 else{
-                    cout << "funcion p muertes con p igual a: " << argv[i + 1] << " y archivo: " << argv[i + 2];
                     int fistProv = stoi(argv[i+1]);
-                    //p_muertes(argv[i+2],fistProv);
+                    muertes(argv[i+2],fistProv);
                     break;
                 }
             }
